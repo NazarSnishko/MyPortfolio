@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+            text-align: center; /* Centering the content */
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Image styles */
+        img {
+            max-width: 100%; /* Максимальна ширина 100% від розміру контейнера */
+            height: auto; /* Автоматична висота для збереження пропорцій */
+            display: block; /* Центрувати зображення */
+            margin: 0 auto; /* Центрувати горизонтально */
+            margin-top: 20px; /* Додати верхній відступ */
+            max-height: 300px; /* Максимальна висота 300px (можна змінити на потрібний розмір) */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/projects">Projects</a></li>
+        </ul>
+    </nav>
+    <img src="{{ url_for('static', filename='images/My.jpg') }}" alt="My Photo">
+    <main>
+        <!-- Content goes here -->
+    </main>
+    <footer>
+        <p>&copy; 2024 Nazarii</p>
+    </footer>
+</body>
+</html>
